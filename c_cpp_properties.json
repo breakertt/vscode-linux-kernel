@@ -1,10 +1,36 @@
 {
+    "env": {
+        "LINUX_SRC": "/home/breakertt/repos/net-next"
+    },
     "configurations": [
         {
             "name": "Linux",
-            "cStandard": "c11",
             "intelliSenseMode": "gcc-x64",
-            "compileCommands": "${workspaceFolder}/compile_commands.json"
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "defines": ["__KERNEL__"],
+            "includePath": [
+                "${workspaceFolder}",
+                "${LINUX_SRC}/include",
+                "${LINUX_SRC}/include/uapi",
+                "${LINUX_SRC}/include/generated",
+                "${LINUX_SRC}/arch/x86/include",
+                "${LINUX_SRC}/arch/x86/include/uapi",
+                "${LINUX_SRC}/arch/x86/include/generated"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${LINUX_SRC}/include",
+                    "${LINUX_SRC}/mm",
+                    "${LINUX_SRC}/fs",
+                    "${LINUX_SRC}/kernel",
+                    "${LINUX_SRC}/net",
+                    "${LINUX_SRC}/crypto"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4

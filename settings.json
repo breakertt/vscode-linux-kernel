@@ -1,8 +1,8 @@
 {
-    "files.exclude": {
-        "**/.*.*.cmd": true,
-        "**/.*.d": true,
-        "**/.*.S": true
+    "C_Cpp.clang_format_style": "file:.vscode/.clang-format",
+    "C_Cpp.autoAddFileAssociations": false,
+    "files.associations": {
+        "*.h": "c"
     },
     "[c]": {
         "editor.detectIndentation": false,
@@ -10,7 +10,9 @@
         "editor.insertSpaces": false,
         "editor.rulers": [80,100]
     },
-    "files.associations": {
-        "*.h": "c"
-    }
+    "files.exclude": {
+        "**/.*.*.cmd": true,
+        "**/.*.d": true,
+        "**/.*.S": true,
+    },
 }
