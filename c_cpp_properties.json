@@ -8,15 +8,17 @@
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
-            "defines": ["__KERNEL__"],
+            "defines": [
+                "__KERNEL__"
+            ],
             "includePath": [
                 "${workspaceFolder}",
                 "${LINUX_SRC}/include",
                 "${LINUX_SRC}/include/uapi",
                 "${LINUX_SRC}/include/generated",
-                "${LINUX_SRC}/arch/x86/include",
-                "${LINUX_SRC}/arch/x86/include/uapi",
-                "${LINUX_SRC}/arch/x86/include/generated"
+                "${LINUX_SRC}/arch/x64/include",
+                "${LINUX_SRC}/arch/x64/include/uapi",
+                "${LINUX_SRC}/arch/x64/include/generated"
             ],
             "browse": {
                 "path": [
