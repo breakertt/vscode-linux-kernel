@@ -9,16 +9,22 @@
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "defines": [
-                "__KERNEL__"
+                "KBUILD_MODNAME=\"place_holder\"",
+                "__GNUC__",
+                "__KERNEL__",
+                "MODULE"
             ],
             "includePath": [
                 "${workspaceFolder}",
                 "${LINUX_SRC}/include",
                 "${LINUX_SRC}/include/uapi",
                 "${LINUX_SRC}/include/generated",
-                "${LINUX_SRC}/arch/x64/include",
-                "${LINUX_SRC}/arch/x64/include/uapi",
-                "${LINUX_SRC}/arch/x64/include/generated"
+                "${LINUX_SRC}/arch/x86/include",
+                "${LINUX_SRC}/arch/x86/include/uapi",
+                "${LINUX_SRC}/arch/x86/include/generated",
+                "${LINUX_SRC}/arch/arm64/include",
+                "${LINUX_SRC}/arch/arm64/include/uapi",
+                "${LINUX_SRC}/arch/arm64/include/generated"
             ],
             "browse": {
                 "path": [
