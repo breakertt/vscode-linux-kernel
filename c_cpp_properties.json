@@ -4,7 +4,7 @@
     },
     "configurations": [
         {
-            "name": "Linux",
+            "name": "HomaModule",
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
@@ -36,6 +36,19 @@
                     "${LINUX_SRC}/net",
                     "${LINUX_SRC}/crypto"
                 ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "HomaUtil",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "includePath": ["${workspaceFolder}"],
+            "browse": {
+                "path": ["${workspaceFolder}"],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             }
